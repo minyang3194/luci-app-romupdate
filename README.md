@@ -1,2 +1,5 @@
 # luci-romupdate
-test11222555
+
+# Special thanks:
+
+    ·v2fly/v2ray-coreHyy2001X/luci-app-autoupdate
