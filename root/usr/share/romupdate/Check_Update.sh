@@ -1,10 +1,8 @@
 #!/bin/bash
-# https://github.com/Hyy2001X/AutoBuild-Actions
-# AutoBuild Module by Hyy2001
-
+##
 rm -f /tmp/cloud_version
-if [ ! -f /bin/AutoUpdate.sh ];then
-	echo "未检测到 /bin/AutoUpdate.sh" > /tmp/cloud_version
+if [ ! -f /bin/Romupdate.sh ];then
+	echo "未检测到 /bin/Romupdate.sh" > /tmp/cloud_version
 	exit
 fi
 CURRENT_DEVICE="$(awk 'NR==3' /etc/openwrt_info)"
