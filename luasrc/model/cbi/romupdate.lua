@@ -1,12 +1,12 @@
 require("luci.sys")
 
-m = Map("romupdate", translate("AutoUpdate"), translate("Scheduled Update is a timed run Openwrt-AutoUpdate application"))
+m = Map("romupdate", translate("Romupdate"), translate("Romupdate is a timed run luci-romupdate application"))
 
 s=m:section(TypedSection,"login","")
 s.addremove=false
 s.anonymous=true
 
-o = s:option(Flag, "enable", translate("Enable AutoUpdate"),translate("Automatically update firmware during the specified time"))
+o = s:option(Flag, "enable", translate("Enable Romupdate"), translate("Automatically update firmware during the specified time"))
 o.default = 0
 o.optional = false
 

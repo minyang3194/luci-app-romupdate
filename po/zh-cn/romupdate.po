@@ -1,5 +1,5 @@
-msgid "AutoUpdate"
-msgstr "定时更新"
+msgid "Romupdate"
+msgstr "固件更新"
 
 msgid "xWeek Day"
 msgstr "更新时间"
@@ -22,8 +22,8 @@ msgstr "检查更新"
 msgid "Enable AutoUpdate"
 msgstr "启用定时更新"
 
-msgid "Scheduled Update is a timed run Openwrt-AutoUpdate application"
-msgstr "定时更新是一个 定时执行更新固件脚本 的应用"
+msgid "Romupdate is a timed run luci-romupdate application"
+msgstr "固件更新是一个让你随时检测固件更新并支持在线升级的应用"
 
 msgid "Do Upgrade"
 msgstr "执行更新"
