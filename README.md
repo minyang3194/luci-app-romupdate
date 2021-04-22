@@ -4,4 +4,4 @@
 
 已适配 Openwrt-AutoUpdate V5.5+
 
-test11
+test11222
