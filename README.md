@@ -1,2 +1,2 @@
-# luci-app-autoupdate
+# luci-romupdate
 test11222

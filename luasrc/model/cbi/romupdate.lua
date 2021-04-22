@@ -1,6 +1,6 @@
 require("luci.sys")
 
-m=Map("autoupdate",translate("AutoUpdate"),translate("Scheduled Update is a timed run Openwrt-AutoUpdate application"))
+m = Map("romupdate", translate("AutoUpdate"), translate("Scheduled Update is a timed run Openwrt-AutoUpdate application"))
 
 s=m:section(TypedSection,"login","")
 s.addremove=false
@@ -33,7 +33,7 @@ local github_url = luci.sys.exec("cat /etc/openwrt_info | awk 'NR==2'")
 o=s:option(Value,"github",translate("Github Url"))
 o.default=github_url
 
-luci.sys.call ( "/usr/share/autoupdate/Check_Update.sh > /dev/null")
+luci.sys.call("/usr/share/romupdate/Check_Update.sh > /dev/null")
 local cloud_version = luci.sys.exec("cat /tmp/cloud_version")
 local current_version = luci.sys.exec("cat /etc/openwrt_info | awk 'NR==1'")
 local current_model = luci.sys.exec("jsonfilter -e '@.model.id' < /etc/board.json | tr ',' '_'")
@@ -49,7 +49,7 @@ end
 
 local e=luci.http.formvalue("cbi.apply")
 if e then
-  io.popen("/etc/init.d/autoupdate restart")
+    io.popen("/etc/init.d/romupdate restart")
 end
 
 m.reset  = false
