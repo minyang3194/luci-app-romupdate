@@ -1,6 +1,12 @@
 msgid "Romupdate"
 msgstr "固件更新"
 
+msgid "Enable Romupdate"
+msgstr "开始检测更新"
+
+msgid "Tick to enable firmware update"
+msgstr "打勾即启用固件更新件"
+
 msgid "xWeek Day"
 msgstr "更新时间"
 
@@ -19,9 +25,6 @@ msgstr "分钟 [0~59]"
 msgid "Check Update"
 msgstr "检查更新"
 
-msgid "Enable AutoUpdate"
-msgstr "启用定时更新"
-
 msgid "Romupdate is a timed run luci-romupdate application"
 msgstr "固件更新是一个让你随时检测固件更新并支持在线升级的应用"
 
@@ -30,9 +33,6 @@ msgstr "执行更新"
 
 msgid "Upgrade to Latested Version"
 msgstr "更新固件"
-
-msgid "Automatically update firmware during the specified time"
-msgstr "启用后将在指定时间段自动检查并更新固件"
 
 msgid "Github Url"
 msgstr "Github 地址"
