@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Hyy2001X <https://github.com/Hyy2001X>
+# Copyright (C) 2021 Lenyu
 
 include $(TOPDIR)/rules.mk
 
