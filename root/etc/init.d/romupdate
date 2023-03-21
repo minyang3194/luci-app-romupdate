@@ -14,16 +14,9 @@ run_autoupdate() {
     [ "${minute}" == "0" ] && minute="00"
     [ "${week}" == "7" ] && week="*"
     sed -i '/Romupdate/d' /etc/crontabs/root >/dev/null 2>&1
-    echo "$minute $hour * * $week bash /bin/Romupdate.sh -u" >>/etc/crontabs/root
+    echo "$minute $hour * * $week sh /usr/share/Lenyu-auto.sh -u" >>/etc/crontabs/root
   else
     sed -i '/Romupdate/d' /etc/crontabs/root >/dev/null 2>&1
-  fi
-  if [ -f /bin/Romupdate.sh ] && [ -f /etc/openwrt_info ]; then
-    custom_github_url="$(uci get romupdate.@login[0].github)"
-    if [[ ! -z "${custom_github_url}" ]]; then
-      current_github_url="$(cat /etc/openwrt_info | awk 'NR==2')"
-      sed -i "s?${current_github_url}?${custom_github_url}?g" /etc/openwrt_info >/dev/null 2>&1
-    fi
   fi
   /etc/init.d/cron restart
   echo "已重启 Romupdate 服务."
