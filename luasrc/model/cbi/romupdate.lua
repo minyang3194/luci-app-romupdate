@@ -42,10 +42,10 @@ local current_model = luci.sys.exec("jsonfilter -e '@.model.id' < /etc/board.jso
 
 --local firmware_type = luci.sys.exec("grep 'DISTRIB_ARCH=' /etc/openwrt_release | cut -d \' -f 2")
 
-button_upgrade_firmware = s:option (Button, "_button_upgrade_firmware", translate("更新到最新版本"),
+button_upgrade_firmware = s:option (Button, "_button_upgrade_firmware", translate("固件升级"),
 translatef("点击上方 执行更新 后请耐心等待至路由器重启.") .. "<br><br>当前固件版本: <span style='color: green'>" .. current_version .. "</span><br>云端固件版本: <span style='color: red'>" .. cloud_version .. "</span>")
 --.."<br>固件类型: " .. firmware_type
-button_upgrade_firmware.inputtitle = translate ("执行更新")
+button_upgrade_firmware.inputtitle = translate ("执行升级")
 button_upgrade_firmware.write = function()
     luci.sys.call("sh /usr/share/Lenyu-auto.sh -u > /dev/null")
 end
