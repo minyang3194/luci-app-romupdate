@@ -1,6 +1,6 @@
 require("luci.sys")
 
-m = Map("romupdate", translate("ROM在线升级插件"), translate("ROM升级是一个在线升级ROM的程序."))
+m = Map("romupdate", translate("ROM在线升级插件"), translate("ROM升级是一个在线升级固件的程序."))
 --这里section 是对应配置文件romupdate里的第一个类型 ‘longin’，可以有多个section
 s = m:section(TypedSection, "login", "")
 s.addremove = false
