@@ -2,5 +2,5 @@
 
 # Special thanks:
 
-    ·luci-app-autoupdate
+    ·luci-app-romupdate
 
