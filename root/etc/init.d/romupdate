@@ -13,10 +13,10 @@ run_autoupdate() {
 
     [ "${minute}" == "0" ] && minute="00"
     [ "${week}" == "7" ] && week="*"
-    sed -i '/Romupdate/d' /etc/crontabs/root >/dev/null 2>&1
+    sed -i '/Lenyu/d' /etc/crontabs/root >/dev/null 2>&1
     echo "$minute $hour * * $week sh /usr/share/Lenyu-auto.sh -u" >>/etc/crontabs/root
   else
-    sed -i '/Romupdate/d' /etc/crontabs/root >/dev/null 2>&1
+    sed -i '/Lenyu/d' /etc/crontabs/root >/dev/null 2>&1
   fi
   /etc/init.d/cron restart
   echo "已重启 Romupdate 服务."
@@ -28,7 +28,7 @@ start() {
 }
 
 stop() {
-  sed -i '/Romupdate/d' /etc/crontabs/root >/dev/null 2>&1
+  sed -i '/Lenyu/d' /etc/crontabs/root >/dev/null 2>&1
   echo "已停止 Romupdate 服务."
 }
 

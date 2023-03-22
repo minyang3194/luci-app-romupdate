@@ -30,11 +30,6 @@ pass=s:option(Value,"minute",translate("分钟 [0~59]"))
 pass.datatype = "range(0,59)"
 pass.rmempty = false
 
---local github_url = luci.sys.exec("cat /etc/openwrt_info | awk 'NR==2'")
---o=s:option(Value,"github",translate("Github 地址"))
---o.default=github_url
-
---luci.sys.call("/usr/share/romupdate/Lenyu-auto.sh > /dev/null")
 luci.sys.call("sh /usr/share/Lenyu-version.sh > /dev/null")
 local cloud_version = luci.sys.exec("cat /tmp/cloud_ts_version | cut -d _ -f 1")
 local current_version = luci.sys.exec("cat /etc/lenyu_version")
