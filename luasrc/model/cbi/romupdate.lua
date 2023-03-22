@@ -7,7 +7,7 @@ s.addremove = false
 s.anonymous = true --定是否显示Section的名称，建议为true
 
 --enable对应配置文件里字段名，0就是默认不选，也就是进入luci界面之后checkbox不勾选，1就是默认勾选
-o = s:option(Flag, "enable", translate("启用系统升级"), translate("打勾即启用固件更新固件"))
+o = s:option(Flag, "enable", translate("启用系统升级"), translate("打勾即启用定时更新固件功能"))
 o.default = 0
 o.optional = false
 
