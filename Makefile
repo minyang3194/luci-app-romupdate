@@ -22,5 +22,4 @@ define Package/luci-app-romupdate/install
   $(INSTALL_DATA) $(PKG_BUILD_DIR)/po/romupdate.zh-cn.lmo $(1)/usr/lib/lua/luci/i18n/romupdate.zh-cn.lmo
 endef
 
-# call BuildPackage - OpenWrt buildroot signature
 
