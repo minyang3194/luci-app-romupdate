@@ -3,5 +3,4 @@
 # Special thanks:
 
     ·luci-app-romupdate
-    ·test
 
