@@ -2,6 +2,6 @@
 
 # Special thanks:
 
-    ·luci-app-romupdate
+    ·luci-app-romupdate.
 
-111
+    ·This is a stable branch.
